@@ -1,17 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core'; 
-import { MaterialModule } from '@angular/material';
+import {HttpModule} from '@angular/http';
+import {MatToolbarModule} from '@angular/material';
 import { AppComponent } from './app.component';
+import { RedditComponent } from './reddit/reddit.component';
+import { RedditPostServiceService } from './reddit/reddit-post-service.service';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RedditComponent,
+    MatToolbarModule,
+    BrowserAnimationsModule
   ],
   imports: [
     BrowserModule,
-    MaterialModule
+    HttpModule
   ],
-  providers: [],
+  providers: [RedditPostServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
