@@ -3,3 +3,26 @@
     border-color: #e7e7e7;
 }
 
+.toolbar-header {
+	background-color: #cee3f8;
+	color:black;
+}
+
+.toolbar-bottom {
+	margin-top:0%;
+	position:absolute;
+	background-color: black;
+	
+}
+
+.toolbar-bottom-text {
+	padding-left : 38%;
+	
+}
+
+
+.example-card {
+	width:96%;
+	margin-left:2% 
+	
+}

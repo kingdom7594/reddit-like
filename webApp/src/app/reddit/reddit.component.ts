@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RedditPostServiceService } from './reddit-post-service.service';
+import  { RedditPost } from  './reddit-post'
 
 
 @Component({
